@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+	<style type="text/css">
+	body{
+		margin:0;
+		font-size:12px;
+		font-family: Tahoma !important;
+		background-image:url('resources/images/blue_background.jpg');
+		background-repeat:repeat;
+	}
+	.ui-widget,.ui-widget .ui-widget {
+	
+	
+	font-family: Tahoma !important;
+ }
+ 
+ .menubutton{
+ 	position: relative;
+ }
+ .arrow{
+ 	
+ 	background: url("resources/images/mainmenu_arrow.png") center no-repeat;
+ }
+
+	
+	</style>
+
+
+</h:head>	
+<h:body>
+
+<h:panelGroup layout="block" style="margin:0 auto;width:1000px">
+		
+		<h:panelGroup layout="block" style="width:800px;margin:0 auto;">
+			
+			
+			
+			
+			<div class="arrow"  style="width:601px;height:570px;margin:0 auto;margin-top:80px;">
+			<p:commandLink styleClass="menubutton" style="top: 420px;left: 414px;">
+			<h:graphicImage width="150" value="/resources/images/hr_button.png"></h:graphicImage>
+			</p:commandLink>
+			
+			<p:commandLink styleClass="menubutton" style="top: 117px;left: -202px;">
+			<h:graphicImage width="150" value="/resources/images/import_button.png"></h:graphicImage>
+			
+			</p:commandLink>
+			
+			<p:commandLink styleClass="menubutton" style="top: -54px;left: -67px;">
+			<h:graphicImage width="150" value="/resources/images/product_button.png"></h:graphicImage>
+			
+			</p:commandLink>
+			
+			<p:commandLink styleClass="menubutton" style="top: 91px;left: 50px;">
+			<h:graphicImage width="150" value="/resources/images/purchasing_button.png"></h:graphicImage>
+			
+			</p:commandLink>
+			
+			
+			<p:commandLink styleClass="menubutton" style="top: 269px;left: 76px;">
+			<h:graphicImage width="150" value="/resources/images/sys_config_button.png"></h:graphicImage>
+			</p:commandLink>
+			</div>
+			
+			
+			
+			
+			<h:panelGroup style="float:right;"> 
+			<h:outputText style="font-weight:bold;" value="help | contact us | logout" />
+			</h:panelGroup>
+			
+					
+		</h:panelGroup>
+
+</h:panelGroup>
+
+
+
+
+</h:body>
+
+	
+</html>

@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+/* Global font size */
+.ui-widget {
+	font-size: 90% !important;
+	font-family: Century Gothic, sans-serif;
+}
+
+.ui-widget .ui-widget {
+	font-size: 95% !important;
+	font-family: Century Gothic, sans-serif;
+}
+
+/* Primefaces PanelGrid no border */
+.panelgridNoBorder tr,.panelgridNoBorder td {
+	border: none !important;
+}
+
+.labelForInput {
+	font-weight: bold;
+	text-align: right;
+}
+
+.verticaltop td {
+	vertical-align: top;
+}
+
+.ui-state-primary .ui-icon {
+	background-image:
+		url("#{resource['primefaces-bootstrap:images/ui-icons_ffffff_256x240.png']}") !important;
+}

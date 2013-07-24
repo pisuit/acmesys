@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+
+</h:head>
+<body>
+	<h:outputStylesheet library="css" name="global.css" />
+	<h:form>
+		<p:panelGrid styleClass="panelgridNoBorder">
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Category:" />
+				</p:column>
+				<p:column>
+					<p:selectOneMenu style="width:250px">
+						<f:selectItem itemLabel="-- Category --" />
+					</p:selectOneMenu>
+				</p:column>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Subcategory:" />
+				</p:column>
+				<p:column>
+					<p:selectOneMenu style="width:250px">
+						<f:selectItem itemLabel="-- Subcategory --" />
+					</p:selectOneMenu>
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Product Name (ENG):" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Product Name (TH):" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Product Name (CHN):" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Product Name (JPN):" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Brand:" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Origin:" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Unit (Purchase):" />
+				</p:column>
+				<p:column>
+					<p:inputText size="50" />
+				</p:column>
+				<p:column styleClass="labelForInput">
+					<h:outputText value="Picture:" />
+				</p:column>
+				<p:column>
+					<p:fileUpload mode="simple" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column styleClass="labelForInput" style="vertical-align:top">
+					<h:outputText value="Remark:" />
+				</p:column>
+				<p:column>
+					<p:inputTextarea style="width:310px;height:100px" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+	</h:form>
+</body>
+</html>

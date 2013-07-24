@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head></h:head>
+<body>
+	<h:outputStylesheet library="css" name="global.css" />
+	<h:form>
+		<p:panelGrid columns="2">
+			<h:outputText value="#{langManager.bundle.getString('group_name')}" />
+			<p:inputText value="#{groupManager.savedGroup.groupName}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('business_registration_id')}" />
+			<p:inputText
+				value="#{groupManager.savedGroup.businessRegistrationID}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('tax_registration_id')}" />
+			<p:inputText value="#{groupManager.savedGroup.taxRegistrationID}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_address')}" />
+			<p:inputText value="#{groupManager.savedGroup.registeredAddress}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_city')}" />
+			<p:inputText value="#{groupManager.savedGroup.registeredCity}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_state')}" />
+			<p:inputText value="#{groupManager.savedGroup.registeredState}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_province')}" />
+			<p:selectOneMenu value="#{groupManager.savedGroup.registerdProvince}">
+				<f:selectItem itemLabel="Select Province" />
+			</p:selectOneMenu>
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_country')}" />
+			<p:selectOneMenu value="#{groupManager.savedGroup.registeredCountry}">
+				<f:selectItem itemLabel="Select Country" />
+			</p:selectOneMenu>
+			<h:outputText
+				value="#{langManager.bundle.getString('registered_postcode')}" />
+			<p:inputText value="#{groupManager.savedGroup.registeredPostcode}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_business_tel1')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactBusinessTel1}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_business_tel2')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactBusinessTel2}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_business_fax')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactBusinessFax}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_address')}" />
+			<p:inputText value="#{groupManager.savedGroup.deliveryAddress}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_city')}" />
+			<p:inputText value="#{groupManager.savedGroup.deliveryCity}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_state')}" />
+			<p:inputText value="#{groupManager.savedGroup.deliveryState}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_province')}" />
+			<p:selectOneMenu value="#{groupManager.savedGroup.deliveryProvince}">
+				<f:selectItem itemLabel="Select Province" />
+			</p:selectOneMenu>
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_country')}" />
+			<p:selectOneMenu value="#{groupManager.savedGroup.deliveryCountry}">
+				<f:selectItem itemLabel="Select Country" />
+			</p:selectOneMenu>
+			<h:outputText
+				value="#{langManager.bundle.getString('delivery_postcode')}" />
+			<p:inputText value="#{groupManager.savedGroup.deliveryPostcode}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_delivery_tel1')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactDeliveryTel1}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_delivery_tel2')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactDeliveryTel2}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_delivery_fax')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactDeliveryFax}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_person1')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactPerson1}" />
+			<h:outputText value="#{langManager.bundle.getString('contact_tel1')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactTel1}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_email1')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactEmail1}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_person2')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactPerson2}" />
+			<h:outputText value="#{langManager.bundle.getString('contact_tel2')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactPerson2}" />
+			<h:outputText
+				value="#{langManager.bundle.getString('contact_email2')}" />
+			<p:inputText value="#{groupManager.savedGroup.contactEmail2}" />
+		</p:panelGrid>
+		<p:dataTable value="#{groupManager.groupList}" var="group">
+		
+		</p:dataTable>
+	</h:form>
+</body>
+</html>

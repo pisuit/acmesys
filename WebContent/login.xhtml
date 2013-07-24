@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+	<style type="text/css">
+	body{
+		margin:0;
+		font-size:12px;
+		font-family: Tahoma !important;
+		background-image:url('resources/images/blue_background.jpg');
+		background-repeat:repeat;
+	}
+	.ui-widget,.ui-widget .ui-widget {
+	
+	
+	font-family: Tahoma !important;
+ }
+	.loginbox-1{
+		display: inline-block;
+		vertical-align: top;
+		width: 100px;
+	}
+	
+	.loginbox-2{
+		display: inline-block;	
+		height: 200px;
+		width: 200px;
+		margin-left: 15px;
+	}
+	
+	</style>
+
+
+</h:head>	
+<h:body>
+
+
+
+
+<p:dialog  widgetVar="dlg" header="ACMESYS" width="425" height="200"  
+        	resizable="false" showEffect="clip" hideEffect="clip" visible="true" closable="false" draggable="false"> 
+
+	<div style="margin:0 auto;width:320px;" >
+	<h:panelGroup layout="block" styleClass="loginbox-1">
+	<h:graphicImage value="/resources/images/login_key.png"></h:graphicImage>
+	
+	</h:panelGroup>
+	
+	<h:panelGroup layout="block" styleClass="loginbox-2">
+		<h:outputText style="font-weight:bold;" value="Username" />
+		<br></br>
+		<h:inputText value="" />
+		<br></br>	
+		<h:outputText style="font-weight:bold;" value="Password" />
+		<br></br>
+		<h:inputText value="" />
+		<br></br>
+		<h:outputText style="font-weight:bold;" value="Site" />
+		<br></br>
+		<h:inputText value="" />
+		<br></br>
+		
+		<h:panelGrid columns="2">
+		<p:commandButton  style="font-weight:bold;" value="Log In"></p:commandButton>
+		
+		<p:commandButton style="font-weight:bold;" value="Cancel"></p:commandButton>
+		
+		
+		</h:panelGrid>
+		
+		<h:outputText style="font-weight:bold;color:red;float:right;" value="Forget Password" />
+		 
+		
+	</h:panelGroup>
+	</div>
+
+</p:dialog>
+
+</h:body>
+
+	
+</html>
